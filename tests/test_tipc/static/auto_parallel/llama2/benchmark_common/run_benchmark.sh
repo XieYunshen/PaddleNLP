@@ -199,8 +199,8 @@ function _train(){
     training_pid=$!  # 获取后台进程的 PID
 
     # 监控进程和日志的更新状态
-    monitor_log_file "$log_file" "$training_pid" & 
-    monitor_log_file_pid=$!  # 获取日志监控进程的 PID
+    # monitor_log_file "$log_file" "$training_pid" & 
+    # monitor_log_file_pid=$!  # 获取日志监控进程的 PID
 
     # 等待训练进程完成
     wait $training_pid
